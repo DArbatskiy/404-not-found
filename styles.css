@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;700&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+    --white: #ffffff;
+    --grey: #bdbdbd;
+    --darkGrey: #333333;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 40px auto 24px;
+
+
+    color: var(--darkGrey);
+}
+
+.header {
+    font-family: 'Inconsolata', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 200px 0 300px;
+}
+
+.image-section {
+}
+
+.image-section img {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    max-width: 540px;
+    height: auto;
+
+}
+
+.info-section {
+    max-width: 586px;
+
+    font-family: 'Space Mono', monospace;
+}
+
+.info-section h1 {
+    margin-bottom: 36px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+}
+
+.info-section p {
+    max-width: 381px;
+    margin-bottom: 64px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+}
+
+.info-section a {
+    display: inline-block;
+    padding: 23px 43px;
+    background: var(--darkGrey);
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.footer {
+
+    text-align: center;
+}
+
+.footer span {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: var(--grey);
+}
+
+.footer span a {
+    font-weight: 700;
+
+    color: var(--grey);
+}
+
+@media (max-width: 1024px){
+    .container {
+        margin: 40px 24px 24px;
+    }
+
+}
+
+@media (max-width: 768px){
+    .container {
+        margin: 20px 24px 24px;
+    }
+
+    .wrapper {
+        margin: 64px 0 114px;
+        flex-direction: column;
+    }
+
+    .info-section h1 {
+        margin-bottom: 30px;
+
+        font-size: 48px;
+        line-height: 71px;
+    }
+
+    .info-section p {
+        margin-bottom: 66px;
+
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
